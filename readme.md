@@ -143,8 +143,7 @@ Database: File-based storage instead of database
 
 Future Enhancements
 
-Database Integration: Replace file storage with proper database (H2, MySQL)
-Web Interface: Develop REST API and web frontend
+
 User Management: Add user roles and authentication
 Advanced Search: Implement full-text search capabilities
 Reporting: Add statistical reports and analytics

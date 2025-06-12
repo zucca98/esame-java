@@ -6,8 +6,6 @@
 *.log
 logs/
 
-# Maven target directory
-target/
 
 # IDE files
 .idea/

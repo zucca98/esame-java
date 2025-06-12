@@ -1,7 +1,3 @@
-
-# Compiled class files
-*.class
-
 # Log files
 *.log
 logs/

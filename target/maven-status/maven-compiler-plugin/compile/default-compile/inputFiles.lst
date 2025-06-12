@@ -1,0 +1,17 @@
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\composite\Category.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\composite\LibraryComponent.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\iterator\LibraryCollection.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\strategy\IdSearchStrategy.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\iterator\LibraryIterator.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\factory\LibraryItemFactory.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\model\Magazine.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\strategy\TitleSearchStrategy.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\model\LibraryItem.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\exceptions\BookNotFoundException.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\composite\ItemLeaf.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\exceptions\LibraryException.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\manager\LibraryManager.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\strategy\SearchStrategy.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\Main.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\model\Book.java
+C:\Users\zucco\OneDrive\Desktop\library-management-system\library-system\src\main\java\com\biblioteca\exceptions\InvalidDataException.java

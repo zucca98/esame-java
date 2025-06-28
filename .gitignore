@@ -1,0 +1,32 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+logs/
+
+# Maven target directory
+target/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.eclipse/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Data files (optional)
+data/
+*.txt
+
+# Temporary files
+*.tmp
+*.temp

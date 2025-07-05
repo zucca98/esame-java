@@ -1,16 +1,39 @@
 package com.biblioteca.util;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
- * JUnit tests for AuthorValidator utility class.
- * Tests validation logic for author names to prevent numeric-only inputs.
+ * Test suite per la classe di utilità AuthorValidator.
+ *
+ * <p>Questa classe di test verifica la logica di validazione dei nomi degli autori,
+ * garantendo che il sistema accetti solo nomi significativi e rifiuti input
+ * puramente numerici o non validi. I test coprono una vasta gamma di casi
+ * per garantire robustezza e usabilità.</p>
+ *
+ * <p><strong>Aree di validazione testate:</strong></p>
+ * <ul>
+ *   <li><strong>Nomi validi:</strong> Vari formati di nomi reali</li>
+ *   <li><strong>Nomi non validi:</strong> Input numerici e non significativi</li>
+ *   <li><strong>Casi limite:</strong> Spazi, caratteri speciali, combinazioni</li>
+ *   <li><strong>Messaggi di errore:</strong> Appropriatezza e chiarezza</li>
+ * </ul>
+ *
+ * <p><strong>Strategia di testing:</strong></p>
+ * <ul>
+ *   <li>Test parametrizzati per efficienza</li>
+ *   <li>Copertura di edge cases realistici</li>
+ *   <li>Verifica messaggi di errore user-friendly</li>
+ *   <li>Test di regressione per casi problematici</li>
+ * </ul>
+ *
+ * @author Sistema Biblioteca
+ * @version 1.0
+ * @since 1.0
  */
 class AuthorValidatorTest {
 

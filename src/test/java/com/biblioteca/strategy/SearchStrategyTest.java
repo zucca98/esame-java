@@ -14,8 +14,31 @@ import com.biblioteca.factory.LibraryItemFactory;
 import com.biblioteca.model.LibraryItem;
 
 /**
- * JUnit tests for SearchStrategy implementations.
- * Tests both IdSearchStrategy and TitleSearchStrategy functionality.
+ * Test suite per le implementazioni del pattern Strategy per la ricerca.
+ *
+ * <p>Questa classe di test verifica il corretto funzionamento delle diverse
+ * strategie di ricerca implementate nel sistema bibliotecario. I test coprono
+ * sia {@link IdSearchStrategy} che {@link TitleSearchStrategy}, verificando
+ * l'intercambiabilità e la correttezza degli algoritmi.</p>
+ *
+ * <p><strong>Strategie testate:</strong></p>
+ * <ul>
+ *   <li><strong>IdSearchStrategy:</strong> Ricerca per ISBN/ISSN con matching esatto e parziale</li>
+ *   <li><strong>TitleSearchStrategy:</strong> Ricerca per titolo con matching parziale</li>
+ * </ul>
+ *
+ * <p><strong>Scenari di test coperti:</strong></p>
+ * <ul>
+ *   <li>Ricerca con risultati multipli</li>
+ *   <li>Ricerca senza risultati</li>
+ *   <li>Ricerca con query edge cases</li>
+ *   <li>Comportamento con dati null/vuoti</li>
+ *   <li>Case sensitivity e matching parziale</li>
+ * </ul>
+ *
+ * @author Sistema Biblioteca
+ * @version 1.0
+ * @since 1.0
  */
 class SearchStrategyTest {
     

@@ -33,8 +33,35 @@ import com.biblioteca.model.LibraryItem;
 import com.biblioteca.strategy.TitleSearchStrategy;
 
 /**
- * Test di integrazione che dimostrano le capacità di Mockito.
- * Versione semplificata per evitare UnnecessaryStubbing.
+ * Test di integrazione che dimostrano le capacità avanzate di Mockito.
+ *
+ * <p>Questa classe di test dimostra l'utilizzo del framework Mockito per
+ * il testing avanzato, inclusi mock objects, stubbing, verifica delle
+ * interazioni e test di comportamento. Rappresenta la tecnologia di
+ * testing richiesta per il progetto.</p>
+ *
+ * <p><strong>Tecniche di Mockito dimostrate:</strong></p>
+ * <ul>
+ *   <li><strong>Mock Objects:</strong> Creazione di oggetti mock con @Mock</li>
+ *   <li><strong>Advanced Stubbing:</strong> Comportamenti multipli e eccezioni</li>
+ *   <li><strong>Verification:</strong> Verifica chiamate e interazioni</li>
+ *   <li><strong>Spy Objects:</strong> Partial mocking di oggetti reali</li>
+ *   <li><strong>Argument Matchers:</strong> Matching flessibile dei parametri</li>
+ * </ul>
+ *
+ * <p><strong>Scenari di test coperti:</strong></p>
+ * <ul>
+ *   <li>Stubbing con comportamenti sequenziali</li>
+ *   <li>Verifica del numero e ordine delle chiamate</li>
+ *   <li>Test di eccezioni e gestione errori</li>
+ *   <li>Integrazione con oggetti reali tramite spy</li>
+ * </ul>
+ *
+ * <p><strong>Nota:</strong> Versione ottimizzata per evitare UnnecessaryStubbing warnings.</p>
+ *
+ * @author Sistema Biblioteca
+ * @version 1.0
+ * @since 1.0
  */
 @ExtendWith(MockitoExtension.class)
 class MockitoIntegrationTest {

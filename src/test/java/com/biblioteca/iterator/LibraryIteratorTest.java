@@ -16,8 +16,33 @@ import com.biblioteca.factory.LibraryItemFactory;
 import com.biblioteca.model.LibraryItem;
 
 /**
- * JUnit tests for LibraryIterator.
- * Tests Iterator Pattern implementation.
+ * Test suite per la classe LibraryIterator.
+ *
+ * <p>Questa classe di test verifica il corretto funzionamento del pattern Iterator
+ * implementato nelle classi {@link LibraryIterator} e {@link LibraryCollection}.
+ * I test coprono tutti gli aspetti dell'iterazione, inclusi casi limite e
+ * funzionalità aggiuntive specifiche del dominio biblioteca.</p>
+ *
+ * <p><strong>Aspetti testati del pattern Iterator:</strong></p>
+ * <ul>
+ *   <li><strong>Iterazione base:</strong> hasNext() e next() standard</li>
+ *   <li><strong>Gestione eccezioni:</strong> NoSuchElementException per fine collezione</li>
+ *   <li><strong>Reset funzionalità:</strong> Riavvio dell'iterazione</li>
+ *   <li><strong>Tracking posizione:</strong> Monitoraggio posizione corrente</li>
+ *   <li><strong>For-each compatibility:</strong> Integrazione con sintassi Java</li>
+ * </ul>
+ *
+ * <p><strong>Strategia di testing:</strong></p>
+ * <ul>
+ *   <li>Setup con dati di test rappresentativi</li>
+ *   <li>Test di comportamento normale e casi limite</li>
+ *   <li>Verifica integrità durante l'iterazione</li>
+ *   <li>Test di funzionalità aggiuntive specifiche</li>
+ * </ul>
+ *
+ * @author Sistema Biblioteca
+ * @version 1.0
+ * @since 1.0
  */
 class LibraryIteratorTest {
     

@@ -8,40 +8,40 @@ import com.biblioteca.model.LibraryItem;
 /**
  * Classe Leaf per elementi bibliotecari individuali nel pattern Composite.
  *
- * <p>Questa classe implementa il ruolo di Leaf nel pattern Composite,
+ * Questa classe implementa il ruolo di Leaf nel pattern Composite,
  * rappresentando gli elementi terminali della gerarchia che non possono
  * contenere altri componenti. Nel contesto bibliotecario, rappresenta
  * singoli elementi come libri o riviste all'interno della struttura
- * organizzativa della biblioteca.</p>
+ * organizzativa della biblioteca.
  *
- * <p><strong>Ruolo nel pattern Composite:</strong></p>
- * <ul>
- *   <li><strong>Leaf:</strong> Rappresenta oggetti foglia nella composizione</li>
- *   <li><strong>Terminal:</strong> Non ha figli e definisce comportamenti per oggetti primitivi</li>
- *   <li><strong>Wrapper:</strong> Incapsula un LibraryItem per integrarlo nella gerarchia</li>
- * </ul>
+ *Ruolo nel pattern Composite:
+ * 
+ *   Leaf: Rappresenta oggetti foglia nella composizione
+ *   Terminal: Non ha figli e definisce comportamenti per oggetti primitivi
+ *   Wrapper: Incapsula un LibraryItem per integrarlo nella gerarchia
  *
- * <p><strong>Caratteristiche principali:</strong></p>
- * <ul>
- *   <li>Incapsula un singolo LibraryItem (Book o Magazine)</li>
- *   <li>Non supporta operazioni di aggiunta/rimozione figli</li>
- *   <li>Delega le operazioni di visualizzazione all'elemento incapsulato</li>
- *   <li>Restituisce sempre 1 come conteggio elementi</li>
- * </ul>
  *
- * <p><strong>Integrazione con il sistema:</strong></p>
- * <ul>
- *   <li>Permette di inserire LibraryItem in strutture gerarchiche</li>
- *   <li>Mantiene la compatibilità con l'interfaccia LibraryComponent</li>
- *   <li>Fornisce accesso all'elemento bibliotecario sottostante</li>
- * </ul>
+ * Caratteristiche principali:
+ * 
+ *   Incapsula un singolo LibraryItem (Book o Magazine)
+ *   Non supporta operazioni di aggiunta/rimozione figli
+ *   Delega le operazioni di visualizzazione all'elemento incapsulato
+ *   Restituisce sempre 1 come conteggio elementi
  *
- * <p><strong>Esempio di utilizzo:</strong></p>
- * <pre>{@code
+ *
+ *Integrazione con il sistema:
+ *
+ *   Permette di inserire LibraryItem in strutture gerarchiche
+ *   Mantiene la compatibilità con l'interfaccia LibraryComponent
+ *   Fornisce accesso all'elemento bibliotecario sottostante
+ * 
+ *
+ *Esempio di utilizzo:
+ *{@code
  * LibraryItem book = LibraryItemFactory.createBook(...);
  * LibraryComponent leaf = new ItemLeaf(book);
  * category.add(leaf); // Aggiunge il libro alla categoria
- * }</pre>
+ * }
  *
  * @author Sistema Biblioteca
  * @version 1.0
@@ -55,8 +55,8 @@ public class ItemLeaf implements LibraryComponent {
     /**
      * Costruisce una nuova foglia che incapsula l'elemento bibliotecario specificato.
      *
-     * <p>Crea un wrapper per l'elemento LibraryItem che permette di integrarlo
-     * nella struttura gerarchica del pattern Composite.</p>
+     *Crea un wrapper per l'elemento LibraryItem che permette di integrarlo
+     *nella struttura gerarchica del pattern Composite.
      *
      * @param item l'elemento bibliotecario da incapsulare (non deve essere nullo)
      */
@@ -67,9 +67,9 @@ public class ItemLeaf implements LibraryComponent {
     /**
      * {@inheritDoc}
      *
-     * <p>Delega la visualizzazione delle informazioni all'elemento
+     * Delega la visualizzazione delle informazioni all'elemento
      * bibliotecario incapsulato, mantenendo la coerenza con il
-     * comportamento originale dell'elemento.</p>
+     * comportamento originale dell'elemento.
      */
     @Override
     public void displayInfo() {
@@ -80,8 +80,8 @@ public class ItemLeaf implements LibraryComponent {
     /**
      * {@inheritDoc}
      *
-     * <p>Le foglie rappresentano sempre un singolo elemento,
-     * quindi restituiscono sempre 1 come conteggio.</p>
+     * Le foglie rappresentano sempre un singolo elemento,
+     * quindi restituiscono sempre 1 come conteggio.
      *
      * @return sempre 1, poiché una foglia rappresenta un singolo elemento
      */
@@ -93,8 +93,8 @@ public class ItemLeaf implements LibraryComponent {
     /**
      * {@inheritDoc}
      *
-     * <p>Le foglie non possono contenere altri componenti, quindi
-     * questa operazione non è supportata e lancia un'eccezione.</p>
+     * Le foglie non possono contenere altri componenti, quindi
+     * questa operazione non è supportata e lancia un'eccezione.
      *
      * @param component il componente da aggiungere (ignorato)
      * @throws UnsupportedOperationException sempre, poiché le foglie non supportano figli
@@ -108,8 +108,8 @@ public class ItemLeaf implements LibraryComponent {
     /**
      * {@inheritDoc}
      *
-     * <p>Le foglie non possono contenere altri componenti, quindi
-     * questa operazione non è supportata e lancia un'eccezione.</p>
+     * Le foglie non possono contenere altri componenti, quindi
+     * questa operazione non è supportata e lancia un'eccezione.
      *
      * @param component il componente da rimuovere (ignorato)
      * @throws UnsupportedOperationException sempre, poiché le foglie non supportano figli
@@ -123,8 +123,8 @@ public class ItemLeaf implements LibraryComponent {
     /**
      * {@inheritDoc}
      *
-     * <p>Le foglie non hanno figli, quindi restituiscono sempre
-     * una lista vuota.</p>
+     * Le foglie non hanno figli, quindi restituiscono sempre
+     * una lista vuota.
      *
      * @return una lista vuota, poiché le foglie non hanno figli
      */
@@ -137,10 +137,9 @@ public class ItemLeaf implements LibraryComponent {
     /**
      * Restituisce l'elemento bibliotecario incapsulato.
      *
-     * <p>Questo metodo fornisce accesso diretto all'elemento LibraryItem
+     * Questo metodo fornisce accesso diretto all'elemento LibraryItem
      * sottostante, utile quando è necessario accedere alle funzionalità
-     * specifiche dell'elemento al di fuori del pattern Composite.</p>
-     *
+     * specifiche dell'elemento al di fuori del pattern Composite.
      * @return l'elemento bibliotecario incapsulato
      */
     public LibraryItem getItem() {

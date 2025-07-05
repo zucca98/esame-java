@@ -177,25 +177,25 @@ public class Main {
     /**
      * Esegue il menu interattivo per l'utente.
      *
-     * <p>Questo metodo implementa l'interfaccia utente principale dell'applicazione,
+     * Questo metodo implementa l'interfaccia utente principale dell'applicazione,
      * fornendo un menu a ciclo continuo che permette all'utente di eseguire
-     * tutte le operazioni disponibili nel sistema bibliotecario.</p>
+     * tutte le operazioni disponibili nel sistema bibliotecario.
      *
-     * <p><strong>Funzionalità del menu:</strong></p>
-     * <ul>
-     *   <li>Aggiunta di libri e riviste</li>
-     *   <li>Ricerca con diverse strategie</li>
-     *   <li>Visualizzazione della collezione</li>
-     *   <li>Salvataggio dati</li>
-     *   <li>Statistiche del sistema</li>
-     * </ul>
+     *Funzionalità del menu:
+     * 
+     *   Aggiunta di libri e riviste
+     *   Ricerca con diverse strategie
+     *   Visualizzazione della collezione
+     *   Salvataggio dati
+     *   Statistiche del sistema
      *
-     * <p><strong>Gestione errori:</strong></p>
-     * <ul>
-     *   <li>Cattura eccezioni LibraryException</li>
-     *   <li>Continua l'esecuzione dopo errori</li>
-     *   <li>Fornisce feedback all'utente</li>
-     * </ul>
+     *
+     * Gestione errori:
+     * 
+     * Cattura eccezioni LibraryException
+     * Continua l'esecuzione dopo errori
+     * Fornisce feedback all'utente<
+     * 
      *
      * @param manager l'istanza del LibraryManager per le operazioni
      * @param scanner lo Scanner per l'input dell'utente
@@ -244,8 +244,8 @@ public class Main {
     /**
      * Visualizza il menu principale delle opzioni disponibili.
      *
-     * <p>Questo metodo mostra all'utente tutte le operazioni disponibili
-     * nel sistema bibliotecario in un formato chiaro e numerato.</p>
+     * Questo metodo mostra all'utente tutte le operazioni disponibili
+     * nel sistema bibliotecario in un formato chiaro e numerato.
      */
     private static void displayMenu() {
         System.out.println("\n=== Library Management System ===");
@@ -262,17 +262,17 @@ public class Main {
     /**
      * Gestisce l'aggiunta di un nuovo libro tramite input utente.
      *
-     * <p>Questo metodo raccoglie tutti i dati necessari per creare un nuovo libro
+     * Questo metodo raccoglie tutti i dati necessari per creare un nuovo libro
      * attraverso l'interfaccia utente, validando ogni input e delegando
-     * la creazione al LibraryManager.</p>
+     * la creazione al LibraryManager.
+     * 
+     * Dati raccolti:
      *
-     * <p><strong>Dati raccolti:</strong></p>
-     * <ul>
-     *   <li>ISBN (validato per non essere vuoto)</li>
-     *   <li>Titolo (validato per non essere vuoto)</li>
-     *   <li>Autore (validato per non essere vuoto)</li>
-     *   <li>Numero di pagine (validato per essere positivo)</li>
-     * </ul>
+     * ISBN (validato per non essere vuoto)
+     * Titolo (validato per non essere vuoto)
+     * Autore (validato per non essere vuoto)
+     * Numero di pagine (validato per essere positivo)
+     *
      *
      * @param manager l'istanza del LibraryManager per aggiungere il libro
      * @param scanner lo Scanner per l'input dell'utente
@@ -295,15 +295,15 @@ public class Main {
     /**
      * Gestisce l'aggiunta di una nuova rivista tramite input utente.
      *
-     * <p>Simile al metodo per i libri, raccoglie i dati specifici per le riviste
-     * e delega la creazione al LibraryManager.</p>
+     * Simile al metodo per i libri, raccoglie i dati specifici per le riviste
+     * e delega la creazione al LibraryManager.
      *
-     * <p><strong>Dati raccolti:</strong></p>
-     * <ul>
-     *   <li>ISSN (validato per non essere vuoto)</li>
-     *   <li>Titolo (validato per non essere vuoto)</li>
-     *   <li>Numero di edizione (validato per essere positivo)</li>
-     * </ul>
+     *Dati raccolti:
+     * 
+     * ISSN (validato per non essere vuoto)
+     * Titolo (validato per non essere vuoto)
+     * Numero di edizione (validato per essere positivo)
+     *
      *
      * @param manager l'istanza del LibraryManager per aggiungere la rivista
      * @param scanner lo Scanner per l'input dell'utente
@@ -325,23 +325,22 @@ public class Main {
     /**
      * Gestisce la ricerca di elementi nella biblioteca tramite interfaccia utente.
      *
-     * <p>Questo metodo implementa l'interfaccia utente per la funzionalità di ricerca,
+     * Questo metodo implementa l'interfaccia utente per la funzionalità di ricerca,
      * dimostrando l'utilizzo del Strategy Pattern permettendo all'utente di scegliere
      * tra diverse strategie di ricerca. Include help contestuale e gestione
-     * intelligente dei risultati.</p>
+     * intelligente dei risultati.
      *
-     * <p><strong>Strategie di ricerca disponibili:</strong></p>
-     * <ul>
-     *   <li><strong>Ricerca per titolo:</strong> Matching parziale case-insensitive</li>
-     *   <li><strong>Ricerca per ID:</strong> Matching esatto o parziale con cifre</li>
-     * </ul>
+     * Strategie di ricerca disponibili:
+     * 
+     * Ricerca per titolo:</strong> Matching parziale case-insensitive
+     * Ricerca per ID:</strong> Matching esatto o parziale con cifre
      *
-     * <p><strong>Caratteristiche avanzate:</strong></p>
-     * <ul>
-     *   <li>Help contestuale per ricerca ID</li>
-     *   <li>Feedback intelligente per risultati vuoti</li>
-     *   <li>Validazione lunghezza minima per ricerca parziale</li>
-     * </ul>
+     * Caratteristiche avanzate:
+     * 
+     * Help contestuale per ricerca ID
+     * Feedback intelligente per risultati vuoti
+     * Validazione lunghezza minima per ricerca parziale
+     *
      *
      * @param manager l'istanza del LibraryManager per eseguire la ricerca
      * @param scanner lo Scanner per l'input dell'utente
@@ -395,17 +394,17 @@ public class Main {
     /**
      * Ottiene input validato dall'utente garantendo che non sia vuoto.
      *
-     * <p>Questo metodo di utilità implementa la validazione di base per l'input
+     * Questo metodo di utilità implementa la validazione di base per l'input
      * dell'utente, continuando a richiedere input fino a quando non viene
      * fornita una stringa non vuota. Rimuove automaticamente spazi iniziali
-     * e finali.</p>
+     * e finali.
      *
-     * <p><strong>Validazioni eseguite:</strong></p>
-     * <ul>
-     *   <li>Rimozione spazi iniziali e finali (trim)</li>
-     *   <li>Controllo che l'input non sia vuoto</li>
-     *   <li>Ripetizione richiesta fino a input valido</li>
-     * </ul>
+     * Validazioni eseguite:
+     * 
+     * Rimozione spazi iniziali e finali (trim)
+     * Controllo che l'input non sia vuoto
+     * Ripetizione richiesta fino a input valido
+     * 
      *
      * @param prompt il messaggio da mostrare all'utente
      * @param scanner lo Scanner per leggere l'input
@@ -426,18 +425,18 @@ public class Main {
     /**
      * Ottiene input numerico intero validato dall'utente.
      *
-     * <p>Questo metodo di utilità gestisce l'input di numeri interi con
+     * Questo metodo di utilità gestisce l'input di numeri interi con
      * validazione completa, includendo controllo del formato e del valore.
      * Continua a richiedere input fino a quando non viene fornito un
-     * numero intero positivo valido.</p>
+     * numero intero positivo valido.
      *
-     * <p><strong>Validazioni eseguite:</strong></p>
-     * <ul>
-     *   <li>Parsing corretto come intero</li>
-     *   <li>Valore positivo (maggiore di zero)</li>
-     *   <li>Gestione eccezioni di formato</li>
-     *   <li>Ripetizione richiesta fino a input valido</li>
-     * </ul>
+     * Validazioni eseguite:
+     * 
+     *   Parsing corretto come intero
+     *   Valore positivo (maggiore di zero)
+     *   Gestione eccezioni di formato
+     *   Ripetizione richiesta fino a input valido
+     *
      *
      * @param prompt il messaggio da mostrare all'utente
      * @param scanner lo Scanner per leggere l'input

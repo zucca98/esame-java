@@ -7,40 +7,39 @@ import java.util.List;
 /**
  * Classe Composite per la gestione di categorie e sottocategorie nel sistema bibliotecario.
  *
- * <p>Questa classe implementa il ruolo di Composite nel pattern Composite,
+ * Questa classe implementa il ruolo di Composite nel pattern Composite,
  * rappresentando un contenitore che può contenere altri componenti
  * (sia foglie che altri compositi). Nel contesto bibliotecario, rappresenta
- * categorie che possono contenere libri, riviste o altre sottocategorie.</p>
+ * categorie che possono contenere libri, riviste o altre sottocategorie.
  *
- * <p><strong>Ruolo nel pattern Composite:</strong></p>
- * <ul>
- *   <li><strong>Composite:</strong> Definisce comportamenti per componenti con figli</li>
- *   <li><strong>Container:</strong> Memorizza componenti figli e implementa operazioni correlate</li>
- *   <li><strong>Delegator:</strong> Delega operazioni ai figli quando appropriato</li>
- * </ul>
+ * Ruolo nel pattern Composite:
  *
- * <p><strong>Caratteristiche principali:</strong></p>
- * <ul>
- *   <li>Gestione di una collezione di componenti figli</li>
- *   <li>Operazioni ricorsive su tutta la gerarchia</li>
- *   <li>Calcolo aggregato delle informazioni (es. conteggio elementi)</li>
- *   <li>Visualizzazione gerarchica con indentazione</li>
- * </ul>
+ *   Composite: Definisce comportamenti per componenti con figli
+ *   Container: Memorizza componenti figli e implementa operazioni correlate
+ *   Delegator: Delega operazioni ai figli quando appropriato
  *
- * <p><strong>Esempi di utilizzo:</strong></p>
- * <ul>
- *   <li>Categoria "Fiction" contenente libri di narrativa</li>
- *   <li>Categoria "Science" con sottocategorie "Physics", "Chemistry"</li>
- *   <li>Organizzazione gerarchica della biblioteca</li>
- * </ul>
  *
- * <p><strong>Operazioni supportate:</strong></p>
- * <ul>
- *   <li>Aggiunta e rimozione di componenti figli</li>
- *   <li>Navigazione della gerarchia</li>
- *   <li>Calcolo ricorsivo del numero di elementi</li>
- *   <li>Visualizzazione strutturata</li>
- * </ul>
+ * Caratteristiche principali:
+ * 
+ * Gestione di una collezione di componenti figli
+ * Operazioni ricorsive su tutta la gerarchia
+ * Calcolo aggregato delle informazioni (es. conteggio elementi)
+ * Visualizzazione gerarchica con indentazione
+ *
+ *
+ * Esempi di utilizzo:
+ * 
+ *   Categoria "Fiction" contenente libri di narrativa
+ *   Categoria "Science" con sottocategorie "Physics", "Chemistry"
+ *   Organizzazione gerarchica della biblioteca
+ * 
+ * Operazioni supportate:
+ * 
+ *   Aggiunta e rimozione di componenti figli
+ *   Navigazione della gerarchia
+ *   Calcolo ricorsivo del numero di elementi
+ *   Visualizzazione strutturata
+ * 
  *
  * @author Sistema Biblioteca
  * @version 1.0
@@ -57,8 +56,8 @@ public class Category implements LibraryComponent {
     /**
      * Costruisce una nuova categoria con il nome specificato.
      *
-     * <p>Inizializza una categoria vuota pronta per ricevere componenti figli.
-     * La lista dei figli viene inizializzata come ArrayList vuoto.</p>
+     * Inizializza una categoria vuota pronta per ricevere componenti figli.
+     * La lista dei figli viene inizializzata come ArrayList vuoto.
      *
      * @param name il nome della categoria (non deve essere nullo)
      */
@@ -71,9 +70,9 @@ public class Category implements LibraryComponent {
     /**
      * {@inheritDoc}
      *
-     * <p>Aggiunge un componente alla collezione dei figli di questa categoria.
+     * Aggiunge un componente alla collezione dei figli di questa categoria.
      * Il componente può essere un elemento singolo (ItemLeaf) o un'altra
-     * categoria (Category), permettendo la creazione di gerarchie complesse.</p>
+     * categoria (Category), permettendo la creazione di gerarchie complesse.
      *
      * @param component il componente da aggiungere alla categoria
      */
@@ -86,9 +85,8 @@ public class Category implements LibraryComponent {
     /**
      * {@inheritDoc}
      *
-     * <p>Rimuove un componente dalla collezione dei figli di questa categoria.
-     * Utilizza il metodo equals() per identificare il componente da rimuovere.</p>
-     *
+     * Rimuove un componente dalla collezione dei figli di questa categoria.
+     * Utilizza il metodo equals() per identificare il componente da rimuovere.
      * @param component il componente da rimuovere dalla categoria
      */
     @Override
@@ -100,8 +98,8 @@ public class Category implements LibraryComponent {
     /**
      * {@inheritDoc}
      *
-     * <p>Restituisce una vista read-only della lista dei componenti figli
-     * per prevenire modifiche accidentali alla struttura interna.</p>
+     * Restituisce una vista read-only della lista dei componenti figli
+     * per prevenire modifiche accidentali alla struttura interna.
      *
      * @return una lista non modificabile dei componenti figli
      */
@@ -114,9 +112,9 @@ public class Category implements LibraryComponent {
     /**
      * {@inheritDoc}
      *
-     * <p>Visualizza le informazioni della categoria e di tutti i suoi figli
+     * Visualizza le informazioni della categoria e di tutti i suoi figli
      * in modo ricorsivo. Utilizza l'indentazione per mostrare la gerarchia
-     * e include il conteggio totale degli elementi.</p>
+     * e include il conteggio totale degli elementi.
      */
     @Override
     public void displayInfo() {
@@ -133,9 +131,9 @@ public class Category implements LibraryComponent {
     /**
      * {@inheritDoc}
      *
-     * <p>Calcola ricorsivamente il numero totale di elementi contenuti
+     * Calcola ricorsivamente il numero totale di elementi contenuti
      * in questa categoria e in tutte le sue sottocategorie. Utilizza
-     * le Stream API per un calcolo efficiente e funzionale.</p>
+     * le Stream API per un calcolo efficiente e funzionale.
      *
      * @return il numero totale di elementi nella categoria e nelle sottocategorie
      */

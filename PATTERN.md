@@ -1,0 +1,7 @@
+Singleton: "Garantisce che esista una sola istanza della classe in tutto il sistema fornendo un punto di accesso globale controllato."
+Factory: "Centralizza la creazione e validazione degli oggetti nascondendo la complessità costruttiva al codice client."
+Strategy: "Permette di intercambiare algoritmi diversi a runtime incapsulandoli in classi separate che implementano la stessa interfaccia."
+Iterator: "Fornisce un modo uniforme per attraversare una collezione senza esporre la sua struttura interna."
+Composite: "Tratta oggetti singoli e collezioni di oggetti allo stesso modo attraverso un'interfaccia comune per operazioni gerarchiche."
+Builder: "Costruisce oggetti complessi passo dopo passo attraverso un'interfaccia fluida che separa la costruzione dalla rappresentazione."
+Exception Shielding: "Protegge il codice client da dettagli tecnici interni convertendo eccezioni di basso livello in eccezioni di business meaningful."
